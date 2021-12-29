@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("OpenSans"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/Open-sans/OpenSans-Regular.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("/fonts/Open-sans/OpenSans-Regular.woff") format("woff");
+  }
+
+
+  @font-face {
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 600;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("OpenSans"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/Open-sans/OpenSans-SemiBold.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("/fonts/Open-sans/OpenSans-SemiBold.woff") format("woff");
+  }
+
+  @font-face {
+     font-family: "OpenSans";
+     font-style: italic;
+     font-weight: 400;
+     /* Браузер сначала попробует найти шрифт локально */
+     src: local("OpenSans"),
+          /* Если не получилось, загрузит woff2 */
+          url("/fonts/Open-sans/OpenSans-Italic.woff2") format("woff2"),
+          /* Если браузер не поддерживает woff2, загрузит woff */
+          url("/fonts/Open-sans/OpenSans-Italic.woff") format("woff");
+   }
+
+   @font-face {
+     font-family: "PlayfairDisplay";
+     font-style: normal;
+     font-weight: 400;
+     /* Браузер сначала попробует найти шрифт локально */
+     src: local("PlayfairDisplay"),
+          /* Если не получилось, загрузит woff2 */
+          url("/fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff2") format("woff2"),
+          /* Если браузер не поддерживает woff2, загрузит woff */
+          url("/fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff") format("woff");
+   }
+
+   @font-face {
+     font-family: "PlayfairDisplay";
+     font-style: normal;
+     font-weight: 700;
+     /* Браузер сначала попробует найти шрифт локально */
+     src: local("PlayfairDisplay"),
+          /* Если не получилось, загрузит woff2 */
+          url("/fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff2") format("woff2"),
+          /* Если браузер не поддерживает woff2, загрузит woff */
+          url("/fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff") format("woff");
+   }
+
+   @font-face {
+     font-family: "AvenirNext";
+     font-style: normal;
+     font-weight: 600;
+     /* Браузер сначала попробует найти шрифт локально */
+     src: local("AvenirNext"),
+          /* Если не получилось, загрузит woff2 */
+          url("/fonts/Avenir/AvenirNextCyr-Demi.woff2") format("woff2"),
+          /* Если браузер не поддерживает woff2, загрузит woff */
+          url("/fonts/Avenir/AvenirNextCyr-Demi.woff") format("woff");
+   }

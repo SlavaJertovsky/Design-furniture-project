@@ -1,0 +1,68 @@
+body {
+    font-family: "OpenSans", "PlayfairDisplay", "AvenirNext", sans-serif;
+    margin: 0;
+    color: #303032;
+    background-color: #E5E5E5;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.container {
+    
+    width: 1170px;
+    margin: 0 auto;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.header-items{
+    position: absolute;
+    margin-left: 90px;
+}
+
+.menu{
+    font-family: OpenSans;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.13em;
+    color: #303032;
+    text-decoration: none;
+    margin-left: 60px;  
+    
+}
+
+
+.search {
+   width: 27px;
+   height: 28px;
+   background-color: transparent;
+   background-image: url(/img/search.svg);
+   background-repeat: no-repeat;
+   border:0;
+   cursor: pointer;
+
+}
+
+.basket{
+   width: 35px;
+   height: 28px;
+   background-color: transparent;
+   background-image: url(/img/basket.svg);
+   background-repeat: no-repeat;
+   border:0;
+   cursor: pointer;
+   margin-left: 22px;
+
+}
+
