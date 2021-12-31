@@ -2,7 +2,7 @@ body {
     font-family: "OpenSans", "PlayfairDisplay", "AvenirNext", sans-serif;
     margin: 0;
     color: #303032;
-    background-color: #E5E5E5;
+    background-color: #F9FDFF;
 }
 
 h1,
@@ -16,6 +16,7 @@ p {
     
     width: 1170px;
     margin: 0 auto;
+    
 
 }
 
@@ -24,7 +25,11 @@ header{
     justify-content: space-between;
     align-items: center;
     margin-top: 90px;
+    margin-bottom: 125px;
+    position:sticky;
+    
 }
+
 
 .header-items{
     position: absolute;
@@ -38,7 +43,7 @@ header{
     letter-spacing: 0.13em;
     color: #303032;
     text-decoration: none;
-    margin-left: 60px;  
+    margin-left: 50px;  
     
 }
 
@@ -51,6 +56,8 @@ header{
    background-repeat: no-repeat;
    border:0;
    cursor: pointer;
+   
+  
 
 }
 
@@ -66,3 +73,258 @@ header{
 
 }
 
+/* end header */
+
+.title-page{
+    display: flex;
+    margin-bottom: 150px;
+    
+}
+
+.right-description{
+    display: flex;
+    position: relative;
+}
+
+.right-img{
+    margin-top: -40px;
+    margin-right: 25px;
+    
+}
+
+.list{
+    margin-top: 40px;       
+}
+
+
+.right-description::before{
+    content: url(/img/element2.png);
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+    top: -245px;
+    left: 213px;
+
+}
+
+h1{
+    font-family: PlayfairDisplay;
+    font-size: 57px;
+    line-height: 145%;
+    margin-bottom: 25px;
+    width: 545px;
+}
+
+p{
+    font-family: OpenSans;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+.price-left{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  
+}
+
+.price{
+    font-family: OpenSans;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    margin-left: 22px;
+}
+
+.buy-button{
+    width: 238px;
+    height: 58px;
+    background-color:#303032;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: OpenSans;
+    letter-spacing: 0.13em;
+    cursor: pointer;
+}
+/* end title page */
+
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+
+h3{
+    font-family: PlayfairDisplay;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+}
+
+.line{
+    margin-bottom: 130px;
+    margin-left: -66px;
+}
+
+.new {
+    margin-top: 78px;
+}
+
+.name{
+    margin-right: 76px;
+}
+.item-1{
+    padding-top: 46px;
+}
+.item-2{
+    margin-left: -36px;
+}
+.item-3{
+    padding-top: 43px;
+    margin-left: -40px;
+}
+
+.item-4::before{
+    content:url(/img/goods/bg\ 4.png);
+    position: absolute;
+    z-index: -2;
+    right: -40px;
+    top:-43px;
+
+}
+
+.item-2::before{
+    content:url(/img/goods/bg2.png);
+    position: absolute;
+    z-index: -2;
+    top: -45px;
+    left: 276px
+}
+
+.item-3::before{
+    content:url(/img/goods/bg3.png);
+    position: absolute;
+    z-index: -2;
+    left: 300px;
+}
+
+.item-1::before{
+    content:url(/img/goods/bg1.png);
+    position: absolute;
+    z-index: -2;
+    left: -35px;
+    top: 285px;      
+}
+.value {
+    margin-left: -10px;
+    font-family: OpenSans;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    
+}
+/* end items */
+
+.review{
+    width: 653px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.helen{
+    margin-bottom: 17px;
+    margin: 0 auto;
+}
+
+.Helen{
+    font-family: AvenirNext;
+    font-weight: 600;
+    font-size: 22px; 
+    color:#303032 
+}
+
+.profession{
+    font-family: OpenSans;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 154.36%;
+    color:#444348;
+    margin-bottom: 15px;
+}
+.opinion{
+    font-family: OpenSans;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 154.36%;
+    margin: 0 auto;
+    width: 653px;
+}
+
+
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-left: -20px;
+}
+
+.slick-dots button{
+    font-size: 0;
+    padding: 3px;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 0px 4px;
+    border: 2px solid 
+    #B3B3B3;
+    
+}
+
+ul {
+    list-style-type: none;
+ }
+
+.review-slider{
+    position: relative;
+}
+
+.slick-prev.slick-arrow{
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    border: 0;
+    background-color:#F9FDFF;
+    font-size: 0;
+    width: 70px;
+    height: 70px;
+    background-image:url(/img/reviews/left.svg);
+    background-repeat:no-repeat;
+    background-size: contain;
+    z-index: 1;
+
+
+}
+
+.slick-next.slick-arrow{
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    border: 2px;
+    background-color:#F9FDFF;
+    font-size: 0;
+    width: 70px;
+    height: 70px;
+    background-image:url(/img/reviews/right.svg);
+    background-repeat:no-repeat;
+    background-size: cover;
+
+
+}
+
+.slick-active button{
+    background-color: #B3B3B3;
+}
