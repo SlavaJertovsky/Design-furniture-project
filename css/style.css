@@ -75,6 +75,8 @@ header{
 
 /* end header */
 
+
+
 .title-page{
     display: flex;
     margin-bottom: 150px;
@@ -148,6 +150,7 @@ p{
     cursor: pointer;
 }
 /* end title page */
+
 
 
 .items{
@@ -230,6 +233,7 @@ h3{
 }
 /* end items */
 
+
 .review{
     width: 653px;
     margin: 0 auto;
@@ -265,8 +269,10 @@ h3{
     width: 653px;
 }
 
+/* end reviews */
 
 
+/*review-slider*/
 .slick-dots{
     display: flex;
     justify-content: center;
@@ -281,6 +287,8 @@ h3{
     margin: 0px 4px;
     border: 2px solid 
     #B3B3B3;
+    margin-bottom: 140px;
+    cursor: pointer;
     
 }
 
@@ -297,7 +305,7 @@ ul {
     top: 40%;
     left: 12%;
     border: 0;
-    background-color:#F9FDFF;
+    background-color:transparent;
     font-size: 0;
     width: 70px;
     height: 70px;
@@ -305,6 +313,7 @@ ul {
     background-repeat:no-repeat;
     background-size: contain;
     z-index: 1;
+    cursor: pointer;
 
 
 }
@@ -314,17 +323,105 @@ ul {
     top: 40%;
     left: 80%;
     border: 2px;
-    background-color:#F9FDFF;
+    background-color:transparent;
     font-size: 0;
     width: 70px;
     height: 70px;
     background-image:url(/img/reviews/right.svg);
     background-repeat:no-repeat;
     background-size: cover;
+    cursor: pointer;
 
 
 }
 
 .slick-active button{
     background-color: #B3B3B3;
+
 }
+
+/* end review-slider*/
+
+.title-sale{
+    font-family: PlayfairDisplay;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+}
+
+
+.line-two  {
+    margin-bottom: 87px;
+}
+
+.sale-products{
+    display: flex;
+    margin: 0px -27px;
+}
+
+.sale{
+    position: relative;
+}
+
+.sale::before{
+    position: absolute;
+    content: url(/img/chance/bg.png);
+    z-index: -2;
+    bottom: 30%;
+    right:41%;
+
+}
+
+/* sale-slider*/
+
+.sale-products.slick-slide{
+    display: flex;
+    
+}
+
+.sale-slider .slick-dots button{
+    margin: 30px;
+    bottom:500px;
+    position: relative;
+    right:450px;
+    margin-top: 55px;
+    cursor: pointer;
+  
+}
+
+#slick-slide-control10{
+  background-image:url(/img/chance/1.svg);
+  background-color: transparent;
+  border:0;
+  width: 56px;
+  height:23px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius:0px;
+}
+
+#slick-slide-control11{
+    background-image:url(/img/chance/2.svg);
+    background-color: transparent;
+    border:0;
+    width: 59px;
+    height:26px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius:0px;
+  }
+
+  #slick-slide-control12{
+    background-image:url(/img/chance/3.svg);
+    background-color: transparent;
+    border:0;
+    width: 56px;
+    height:23px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius:0px;
+  }
+ 
+  /* end sale-slider*/
