@@ -14,8 +14,9 @@ p {
 
 .container {
     
-    width: 1170px;
+    width: 1140px;
     margin: 0 auto;
+    
     
 
 }
@@ -31,7 +32,7 @@ header{
 }
 
 
-.header-items{
+.nav-items{
     position: absolute;
     margin-left: 90px;
 }
@@ -75,38 +76,11 @@ header{
 
 /* end header */
 
+/* title page */
 
-
-.title-page{
+.main-page{
     display: flex;
-    margin-bottom: 150px;
     
-}
-
-.right-description{
-    display: flex;
-    position: relative;
-}
-
-.right-img{
-    margin-top: -40px;
-    margin-right: 25px;
-    
-}
-
-.list{
-    margin-top: 40px;       
-}
-
-
-.right-description::before{
-    content: url(/img/element2.png);
-    position: absolute;
-    width: 100%;
-    z-index: -2;
-    top: -245px;
-    left: 213px;
-
 }
 
 h1{
@@ -138,24 +112,116 @@ p{
     margin-left: 22px;
 }
 
-.buy-button{
+.title-block button {
     width: 238px;
     height: 58px;
-    background-color:#303032;
+    background-color:#0a0a0c;
     color: #FFFFFF;
     font-size: 16px;
     line-height: 22px;
     font-family: OpenSans;
     letter-spacing: 0.13em;
-    cursor: pointer;
+    cursor:pointer;
+    
+}
+
+.title-wraper{
+    display: flex;
+    position: relative;
+    top: -610px;
+    left:46%   
+}
+     
+
+.title-page {
+    position: relative;
+    margin-left: 25px;
+       
+}
+
+.title-page::before{
+     content:url(/img/bg.png);
+     position: absolute;
+     right:-30%;
+     top: -70%;
+     z-index: -1;
 }
 /* end title page */
+
+/*  title-slider */
+
+.title-slider.slick-initialized .slick-slide{
+    height: 640px;
+    margin-top: 50px;
+    
+    
+      
+}
+
+.title-slider .slick-dots button{
+    margin-bottom: 20px;
+    border:0;
+    border-radius: 0;
+   
+}
+.title-slider .slick-dots{
+    flex-direction: column;
+    margin-left: 92%;
+    top: 17%;
+    position: absolute;
+}
+
+
+
+#slick-slide-control20::before{
+    content: '01';
+    font-family: PlayfairDisplay;
+    width: 23px;
+    height: 29px;
+    font-size: 40px;
+    line-height: 145%;
+    color:black;
+
+}
+
+#slick-slide-control21::before{
+    content: '02';
+    font-family: PlayfairDisplay;
+    width: 23px;
+    height: 29px;
+    font-size: 40px;
+    line-height: 145%;
+    color:black;
+
+}
+
+#slick-slide-control22::before{
+    content: '03';
+    font-family: PlayfairDisplay;
+    width: 23px;
+    height: 29px;
+    font-size: 40px;
+    line-height: 145%;
+    color:black;
+}
+
+
+
+#slick-slide-control23::before{
+    content: '04';
+    font-family: PlayfairDisplay;
+    width: 23px;
+    height: 29px;
+    font-size: 40px;
+    line-height: 145%;
+    color:black;
+    
+}
 
 
 
 .items{
     display: flex;
-    justify-content: space-between;
     text-align: center;
     position: relative;
     margin-bottom: 100px;
@@ -170,7 +236,7 @@ h3{
 }
 
 .line{
-    margin-bottom: 130px;
+    margin-bottom: px;
     margin-left: -66px;
 }
 
@@ -179,58 +245,23 @@ h3{
 }
 
 .name{
-    margin-right: 76px;
+   margin-top: 110px; 
+       
 }
+
 .item-1{
-    padding-top: 46px;
-}
-.item-2{
-    margin-left: -36px;
-}
-.item-3{
-    padding-top: 43px;
-    margin-left: -40px;
+    padding-top: 150px;
 }
 
-.item-4::before{
-    content:url(/img/goods/bg\ 4.png);
-    position: absolute;
-    z-index: -2;
-    right: -40px;
-    top:-43px;
-
+.new-products{
+    margin-top: 78px;
+}
+.armchair-2{
+    margin-top: 60px;
 }
 
-.item-2::before{
-    content:url(/img/goods/bg2.png);
-    position: absolute;
-    z-index: -2;
-    top: -45px;
-    left: 276px
-}
 
-.item-3::before{
-    content:url(/img/goods/bg3.png);
-    position: absolute;
-    z-index: -2;
-    left: 300px;
-}
 
-.item-1::before{
-    content:url(/img/goods/bg1.png);
-    position: absolute;
-    z-index: -2;
-    left: -35px;
-    top: 285px;      
-}
-.value {
-    margin-left: -10px;
-    font-family: OpenSans;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 41px;
-    
-}
 /* end items */
 
 
@@ -238,6 +269,7 @@ h3{
     width: 653px;
     margin: 0 auto;
     text-align: center;
+    
 }
 
 .helen{
@@ -277,6 +309,7 @@ h3{
     display: flex;
     justify-content: center;
     margin-left: -20px;
+    margin-bottom: 60px;
 }
 
 .slick-dots button{
@@ -335,11 +368,10 @@ ul {
 
 }
 
-.slick-active button{
+.review-slider .slick-active button{
     background-color: #B3B3B3;
 
 }
-
 /* end review-slider*/
 
 .title-sale{
@@ -348,80 +380,153 @@ ul {
     font-size: 28px;
     line-height: 37px;
     letter-spacing: 0.05em;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
+.sale-title{
+    margin-bottom: -10px;
+    position: relative;
+        
+
+}
 
 .line-two  {
     margin-bottom: 87px;
 }
 
-.sale-products{
-    display: flex;
-    margin: 0px -27px;
-}
-
-.sale{
+.section-menu{
+    display: inline-flex;
+    bottom: 20px;
+    right: 16px;
     position: relative;
-}
-
-.sale::before{
-    position: absolute;
-    content: url(/img/chance/bg.png);
-    z-index: -2;
-    bottom: 30%;
-    right:41%;
-
-}
-
-/* sale-slider*/
-
-.sale-products.slick-slide{
-    display: flex;
     
 }
 
-.sale-slider .slick-dots button{
-    margin: 30px;
-    bottom:500px;
-    position: relative;
-    right:450px;
-    margin-top: 55px;
+.section-menu button{
+    border:0;   
+    font-family: OpenSans;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 2px;
     cursor: pointer;
+    margin: 12px;
+    
+
+}
+
+
+.sale-products{
+    display: flex;       
+}
+
+
+.sale-slider_product{
+   position: relative;
+}
+
+.sale-slider img:hover{
+    border-top: 5px solid #303032;   
+
+}
+
+
+.sale-title::before{
+    position: absolute;
+    content: url(/img/chance/bg.png);
+    z-index: -2;
+    right:50%;
+    top:-50%
+}
+
+ .sale-slider_product {
+     position: relative;
+     width: 100%;     
+        
+}
+    
+.sale-slider_product button {
+    position: absolute;
+    top: 68%;
+    left: 73px;
+    width: 210px;
+    height: 60px;
+    color:#FFFFFF;
+    background-color: #303032;
+    border: 0;
+    font-family: OpenSans;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.13em;
+    transform: translate(-35%, 100%);
+    opacity:0;
+    cursor: pointer;
+        
+ }
+    
+  .sale-slider_product:hover button {   
+    opacity: 1;
+}
   
+/* sale-slider*/
+
+.sale-products.slick-slide{
+    display: flex;         
 }
 
-#slick-slide-control10{
-  background-image:url(/img/chance/1.svg);
-  background-color: transparent;
-  border:0;
-  width: 56px;
-  height:23px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius:0px;
-}
 
-#slick-slide-control11{
-    background-image:url(/img/chance/2.svg);
-    background-color: transparent;
-    border:0;
-    width: 59px;
-    height:26px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius:0px;
-  }
-
-  #slick-slide-control12{
-    background-image:url(/img/chance/3.svg);
-    background-color: transparent;
-    border:0;
-    width: 56px;
-    height:23px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius:0px;
-  }
  
   /* end sale-slider*/
+.footer{
+    background-color:  white;
+    height: 235px;
+    position: relative;
+    margin-top: 130px;
+    
+}
+
+.footer::before{
+    content:url(/img/footer/bg.png);
+    z-index: -1;
+    position: absolute;
+    bottom: -586px;
+    right: -31%;
+}
+  .menu-block{
+      display: flex;
+      justify-content:space-between;
+      margin-bottom: 30px;
+      align-items: center;
+  }
+
+  a{
+      text-decoration: none;
+      font-family: AvenirNext;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0.05em;
+      color:#303032;
+      margin: 30px;
+      
+  }
+
+  .footer-menu{
+      margin-right: -22px;
+  }
+
+  .contacts{
+      margin-left: -32px;
+      padding-bottom: 20px;
+      
+  }
+
+  .rights{
+    border-top: 1px solid #d8d8dd;   
+  }
+
+  .rights img{
+      position: absolute;
+      margin-top: 10px;
+      right: 0;
+  }
