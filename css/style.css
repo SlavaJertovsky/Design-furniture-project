@@ -1,7 +1,6 @@
 body {
     font-family: "OpenSans", "PlayfairDisplay", "AvenirNext", sans-serif;
-    margin: 0;
-    color: #303032;
+    margin: 0; 
     background-color: #F9FDFF;
 }
 
@@ -74,6 +73,12 @@ header{
 
 }
 
+.burger-menu{
+    border:0;
+        
+   
+    }
+
 /* end header */
 
 /* title page */
@@ -123,6 +128,7 @@ p{
     letter-spacing: 0.13em;
     cursor:pointer;
     
+    
 }
 
 .title-wraper{
@@ -162,13 +168,14 @@ p{
     margin-bottom: 20px;
     border:0;
     border-radius: 0;
-   
+    background-color: transparent;
 }
 .title-slider .slick-dots{
     flex-direction: column;
-    margin-left: 92%;
-    top: 17%;
+    margin-left: 45%;
+    top: -10%;
     position: absolute;
+    
 }
 
 
@@ -218,6 +225,10 @@ p{
     
 }
 
+.slick-dots li button { 
+    font-size: 0; 
+ } 
+/*  end title-slider */
 
 
 .items{
@@ -246,6 +257,7 @@ h3{
 
 .name{
    margin-top: 110px; 
+   margin-left: -100px;
        
 }
 
@@ -308,11 +320,11 @@ h3{
 .slick-dots{
     display: flex;
     justify-content: center;
-    margin-left: -20px;
-    margin-bottom: 60px;
+    margin-left: -1px;
+    
 }
 
-.slick-dots button{
+.review-slider .slick-dots button{
     font-size: 0;
     padding: 3px;
     background-color: transparent;
@@ -320,7 +332,6 @@ h3{
     margin: 0px 4px;
     border: 2px solid 
     #B3B3B3;
-    margin-bottom: 140px;
     cursor: pointer;
     
 }
@@ -381,6 +392,7 @@ ul {
     line-height: 37px;
     letter-spacing: 0.05em;
     margin-bottom: 15px;
+    margin-top: 200px;
 }
 
 .sale-title{
@@ -472,7 +484,20 @@ ul {
 .sale-products.slick-slide{
     display: flex;         
 }
+.sale-slider .slick-dots button{
+    width: 25px;
+    background-color: #dcdcdf;
+    border-radius: 50%;
+    margin: 0px 8px;
+    border: 1px solid #d4d4da;
+    cursor: pointer;
+    border-radius:0px;
+    
+}
+.sale-slider .slick-active button{
+    background-color: #303032;
 
+}
 
  
   /* end sale-slider*/
@@ -493,7 +518,7 @@ ul {
 }
   .menu-block{
       display: flex;
-      justify-content:space-between;
+      justify-content: space-between;
       margin-bottom: 30px;
       align-items: center;
   }
