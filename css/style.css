@@ -127,7 +127,7 @@ p{
     font-family: OpenSans;
     letter-spacing: 0.13em;
     cursor:pointer;
-    
+    border:0;   
     
 }
 
@@ -169,6 +169,7 @@ p{
     border:0;
     border-radius: 0;
     background-color: transparent;
+    cursor: pointer;
 }
 .title-slider .slick-dots{
     flex-direction: column;
@@ -263,6 +264,7 @@ h3{
 
 .item-1{
     padding-top: 150px;
+    
 }
 
 .new-products{
@@ -436,10 +438,7 @@ ul {
    position: relative;
 }
 
-.sale-slider img:hover{
-    border-top: 5px solid #303032;   
 
-}
 
 
 .sale-title::before{
@@ -455,11 +454,20 @@ ul {
      width: 100%;     
         
 }
+
+.sale-slider_product1 {
+    position: relative;
+    width: 100%;     
+       
+}
+
+
+
     
 .sale-slider_product button {
     position: absolute;
-    top: 68%;
-    left: 73px;
+    top: 94%;
+    left: 14px;
     width: 210px;
     height: 60px;
     color:#FFFFFF;
@@ -469,15 +477,68 @@ ul {
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.13em;
-    transform: translate(-35%, 100%);
     opacity:0;
     cursor: pointer;
+    transition-duration: 0.15s;
         
  }
+ .sale-slider_product1 button {
+    position: absolute;
+    top: 91%;
+    left: 21px;
+    width: 210px;
+    height: 60px;
+    color:#FFFFFF;
+    background-color: #303032;
+    border: 0;
+    font-family: OpenSans;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.13em;
+    opacity:0;
+    cursor: pointer;
+    transition-duration: 0.15s;
+        
+ }
+
+
     
   .sale-slider_product:hover button {   
     opacity: 1;
 }
+.sale-slider_product1:hover button {   
+    opacity: 1;
+}
+
+.sale-slider .item-line{
+    width: 209px;
+    height: 5px;
+    background: #303032;
+    position: absolute;
+    top:20px;
+    left:15px;
+    opacity: 0;
+    transition-duration: 0.15s;
+    }
+
+    .sale-slider .item-line1{
+        width: 209px;
+        height: 5px;
+        background: #303032;
+        position: absolute;
+        top:20px;
+        left:20px;
+        opacity: 0;
+        transition-duration: 0.15s;
+        }
+    
+    .sale-slider_product1:hover .item-line1{
+      opacity: 1;
+    }
+
+    .sale-slider_product:hover .item-line{
+        opacity: 1;
+      }
   
 /* sale-slider*/
 
@@ -499,6 +560,12 @@ ul {
 
 }
 
+.sale-slider .slick-list {
+height: 436px;
+}
+.sale-slider img{
+    margin-left: -5px;
+}
  
   /* end sale-slider*/
 .footer{
@@ -513,8 +580,8 @@ ul {
     content:url(/img/footer/bg.png);
     z-index: -1;
     position: absolute;
-    bottom: -586px;
-    right: -31%;
+    bottom: -100px;
+    right: -35%;
 }
   .menu-block{
       display: flex;
